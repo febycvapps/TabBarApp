@@ -22,10 +22,10 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
+    if (self)
+    {
         self.title = NSLocalizedString(@"First", @"First");
         self.tabBarItem.image = [UIImage imageNamed:@"first"];
-        self.tabBarItem.title = @"ios";
     }
     return self;
 }
@@ -34,8 +34,6 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    self.navigationController.title = @ "iOS Devices";
     self.title = @ "iOS Devices";
     AppDelegate *delegate = (AppDelegate *)[[UIApplication sharedApplication]delegate];
     devices = delegate.devices;
@@ -65,7 +63,6 @@
     firstobjects *thisdevice = [devices objectAtIndex:indexPath.row];
     cell.textLabel.text = thisdevice.devicename;
     cell.imageView.image = thisdevice.devicepicture;
-    
     cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
     return cell;
 }

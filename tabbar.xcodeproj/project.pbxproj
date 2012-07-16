@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8780E04E15B3B48E00985714 /* secondpage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8780E04C15B3B48E00985714 /* secondpage.m */; };
+		8780E04F15B3B48E00985714 /* secondpage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8780E04D15B3B48E00985714 /* secondpage.xib */; };
 		87B52F1D15B39D2100705161 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87B52F1C15B39D2100705161 /* UIKit.framework */; };
 		87B52F1F15B39D2100705161 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87B52F1E15B39D2100705161 /* Foundation.framework */; };
 		87B52F2115B39D2100705161 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87B52F2015B39D2100705161 /* CoreGraphics.framework */; };
@@ -31,6 +33,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8780E04B15B3B48E00985714 /* secondpage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = secondpage.h; sourceTree = "<group>"; };
+		8780E04C15B3B48E00985714 /* secondpage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = secondpage.m; sourceTree = "<group>"; };
+		8780E04D15B3B48E00985714 /* secondpage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = secondpage.xib; sourceTree = "<group>"; };
+		87B0C35715B3B870009D3948 /* tabbar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = tabbar.entitlements; sourceTree = "<group>"; };
 		87B52F1815B39D2100705161 /* tabbar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tabbar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87B52F1C15B39D2100705161 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		87B52F1E15B39D2100705161 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -106,6 +112,7 @@
 		87B52F2215B39D2100705161 /* tabbar */ = {
 			isa = PBXGroup;
 			children = (
+				87B0C35715B3B870009D3948 /* tabbar.entitlements */,
 				87B52F2B15B39D2100705161 /* AppDelegate.h */,
 				87B52F2C15B39D2100705161 /* AppDelegate.m */,
 				87B52F2E15B39D2100705161 /* FirstViewController.h */,
@@ -132,6 +139,9 @@
 				87B52F4915B39D9D00705161 /* firstpage.xib */,
 				87B52F4C15B39DD700705161 /* firstobjects.h */,
 				87B52F4D15B39DD700705161 /* firstobjects.m */,
+				8780E04B15B3B48E00985714 /* secondpage.h */,
+				8780E04C15B3B48E00985714 /* secondpage.m */,
+				8780E04D15B3B48E00985714 /* secondpage.xib */,
 				87B52F2515B39D2100705161 /* InfoPlist.strings */,
 				87B52F2815B39D2100705161 /* main.m */,
 				87B52F2A15B39D2100705161 /* tabbar-Prefix.pch */,
@@ -206,6 +216,7 @@
 				87B52F5715B3A5A700705161 /* iphone.jpeg in Resources */,
 				87B52F5815B3A5A700705161 /* ipod.png in Resources */,
 				87B52F5A15B3A6D300705161 /* tab.png in Resources */,
+				8780E04F15B3B48E00985714 /* secondpage.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +233,7 @@
 				87B52F3715B39D2100705161 /* SecondViewController.m in Sources */,
 				87B52F4A15B39D9D00705161 /* firstpage.m in Sources */,
 				87B52F4E15B39DD700705161 /* firstobjects.m in Sources */,
+				8780E04E15B3B48E00985714 /* secondpage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +351,7 @@
 				87B52F4615B39D2200705161 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

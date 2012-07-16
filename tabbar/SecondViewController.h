@@ -7,7 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "secondpage.h"
 
 @interface SecondViewController : UIViewController
+{
+    IBOutlet UITextField *nametext;
+    IBOutlet UITextField *phonetext;
+}
+
+@property(nonatomic,retain)IBOutlet UITextField *nametext;
+
+@property(nonatomic,retain)IBOutlet UITextField *phonetext;
+
+-(IBAction)submit:(id)sender;
+
+-(IBAction)autohide:(id)sender;
 
 @end
