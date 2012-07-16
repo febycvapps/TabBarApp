@@ -16,11 +16,9 @@
 }
 
 @property(nonatomic,retain)IBOutlet UITextField *nametext;
-
 @property(nonatomic,retain)IBOutlet UITextField *phonetext;
 
 -(IBAction)submit:(id)sender;
-
 -(IBAction)autohide:(id)sender;
 
 @end

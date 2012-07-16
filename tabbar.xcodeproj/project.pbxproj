@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8780E04E15B3B48E00985714 /* secondpage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8780E04C15B3B48E00985714 /* secondpage.m */; };
 		8780E04F15B3B48E00985714 /* secondpage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8780E04D15B3B48E00985714 /* secondpage.xib */; };
+		87B0C35815B3BB56009D3948 /* tabbar.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 87B0C35715B3B870009D3948 /* tabbar.entitlements */; };
 		87B52F1D15B39D2100705161 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87B52F1C15B39D2100705161 /* UIKit.framework */; };
 		87B52F1F15B39D2100705161 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87B52F1E15B39D2100705161 /* Foundation.framework */; };
 		87B52F2115B39D2100705161 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87B52F2015B39D2100705161 /* CoreGraphics.framework */; };
@@ -217,6 +218,7 @@
 				87B52F5815B3A5A700705161 /* ipod.png in Resources */,
 				87B52F5A15B3A6D300705161 /* tab.png in Resources */,
 				8780E04F15B3B48E00985714 /* secondpage.xib in Resources */,
+				87B0C35815B3BB56009D3948 /* tabbar.entitlements in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -16,8 +16,7 @@
 
 @implementation AppDelegate
 
-@synthesize navigation;
-
+@synthesize navigation1,navigation2;
 @synthesize window = _window;
 @synthesize viewController = _viewController;
 @synthesize devices = _devices;
@@ -32,7 +31,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.navigation.title = @"nerdf";
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
     
@@ -56,12 +54,18 @@
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launcher.
     
-    UIViewController *viewController1 = [[[FirstViewController alloc] initWithNibName:@"FirstViewController" bundle:nil] autorelease];
+   UIViewController *viewController1 = [[[FirstViewController alloc] initWithNibName:@"FirstViewController" bundle:nil] autorelease];
     UIViewController *viewController2 = [[[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil] autorelease];
+    
+    self.navigation1 = [[UINavigationController alloc]initWithRootViewController:viewController1];
+    self.navigation1.navigationBar.barStyle = UIBarStyleBlack;
+    
+    self.navigation2 = [[UINavigationController alloc]initWithRootViewController:viewController2];
+    self.navigation2.navigationBar.barStyle = UIBarStyleBlack;
+    
     self.tabBarController = [[[UITabBarController alloc] init] autorelease];
-    self.tabBarController.viewControllers = @[viewController1, viewController2];
-    self.navigation = [[UINavigationController alloc]initWithRootViewController:self.tabBarController];
-    self.window.rootViewController = self.navigation;
+    self.tabBarController.viewControllers = [NSArray arrayWithObjects:self.navigation1, self.navigation2, nil];
+    self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     return YES;
 }

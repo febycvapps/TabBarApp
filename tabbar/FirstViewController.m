@@ -72,7 +72,7 @@
 {
     AppDelegate *delegate = (AppDelegate *)[[UIApplication sharedApplication]delegate];
     firstpage *device = [[firstpage alloc]initwithIndexPath:indexPath];
-    [delegate.navigation pushViewController:device animated:YES];
+    [delegate.navigation1 pushViewController:device animated:YES];
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
 }
@@ -81,7 +81,7 @@
 {
     AppDelegate *delegate = (AppDelegate *)[[UIApplication sharedApplication]delegate];
     firstpage *device = [[firstpage alloc]initwithIndexPath:indexPath];
-    [delegate.navigation pushViewController:device animated:YES];
+    [delegate.navigation1 pushViewController:device animated:YES];
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
 }

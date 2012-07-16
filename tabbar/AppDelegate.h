@@ -12,17 +12,16 @@
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate, UITabBarControllerDelegate>
 {
-    UINavigationController *navigation;
+    UINavigationController *navigation1;
+    UINavigationController *navigation2;
+
 }
 
-@property (nonatomic,retain) UINavigationController *navigation;
-
+@property (nonatomic,retain) UINavigationController *navigation1;
+@property (nonatomic,retain) UINavigationController *navigation2;
 @property (nonatomic,strong) NSMutableArray *devices;
-
 @property (strong, nonatomic) UIWindow *window;
-
 @property (strong, nonatomic) ViewController *viewController;
-
 @property (strong, nonatomic) UITabBarController *tabBarController;
 
 @end
